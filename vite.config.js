@@ -6,14 +6,14 @@ export default defineConfig({
   plugins: [tailwindcss()],
   build: {
     rollupOptions: {
-      input: [
-        'index.html',
-        'historie.html',
-        'dagen.html',
-        'praktisk.html',
-        'onskeliste.html',
-        'rsvp.html',
-      ],
+      input: {
+        main: 'index.html',
+        historie: 'historie.html',
+        dagen: 'dagen.html',
+        praktisk: 'praktisk.html',
+        onskeliste: 'onskeliste.html',
+        rsvp: 'rsvp.html',
+      },
     },
   },
 });

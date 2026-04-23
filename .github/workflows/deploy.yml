@@ -1,4 +1,4 @@
-# Simple workflow for deploying static content to GitHub Pages
+# .github/workflows/deploy.yml
 name: Deploy static content to Pages
 
 on:
@@ -28,7 +28,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          # VI HAR FJERNET CACHE-LINJEN HERFRA
       - name: Install dependencies
         run: npm install
       - name: Build

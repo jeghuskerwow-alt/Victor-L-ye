@@ -13,7 +13,7 @@ export default defineConfig(({mode}) => {
     },
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, '.'),
+        '@': path.resolve('.'),
       },
     },
     server: {
@@ -23,12 +23,12 @@ export default defineConfig(({mode}) => {
     build: {
       rollupOptions: {
         input: {
-          main: path.resolve(__dirname, 'index.html'),
-          historie: path.resolve(__dirname, 'historie.html'),
-          dagen: path.resolve(__dirname, 'dagen.html'),
-          praktisk: path.resolve(__dirname, 'praktisk.html'),
-          onskeliste: path.resolve(__dirname, 'onskeliste.html'),
-          rsvp: path.resolve(__dirname, 'rsvp.html'),
+          main: 'index.html',
+          historie: 'historie.html',
+          dagen: 'dagen.html',
+          praktisk: 'praktisk.html',
+          onskeliste: 'onskeliste.html',
+          rsvp: 'rsvp.html',
         },
       },
     },
